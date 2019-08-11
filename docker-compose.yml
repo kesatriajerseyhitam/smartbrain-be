@@ -1,0 +1,11 @@
+version: '3.6'
+
+services:
+  snartbrain-back-end:
+    container_name: smartbrain-back-end
+    # image: node: 10.15.3
+    build: ./
+    command: npm start
+    working_dir: /usr/src/smartbrain-back-end
+    ports:
+      - "3000:3000"
